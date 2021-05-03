@@ -1,4 +1,5 @@
 html, body {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -36,6 +37,7 @@ body {
   margin: 0;
   font-size: 20px;
   color: #fff;
+  text-transform: capitalize;
 }
 
 .header h3 {
@@ -63,9 +65,27 @@ body {
   padding: 3px 10px;
 }
 
+.arrow-down {
+  font-size: 1.3rem;
+  position: relative;
+}
+.arrow-down::before {
+  content: "▼";
+  display: block;
+  position: absolute;
+  transition: transform .5s ease;
+  transform: rotate(0);
+  top: 0;
+  left: 3px;
+}
+.rotate.arrow-down::before {
+  transform: rotate(180deg);
+  top: 2px;
+}
+
 /* Main */
 .main {
-  background: url('https://content.codecademy.com/projects/2/madison-square-market/s1.jpg') no-repeat center center;
+  background: url(https://content.codecademy.com/projects/2/madison-square-market/s1.jpg) no-repeat center center;
   background-size: cover;
   height: 400px;
   width: 100%;
