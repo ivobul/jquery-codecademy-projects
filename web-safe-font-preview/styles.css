@@ -8,6 +8,7 @@ body {
 .outer-container{
   width: 100%;
 }
+
 h1 {
   color: #FF6D04;
   font-size: 4rem;
@@ -28,20 +29,18 @@ h2 {
 } 
 
 header {
-  text-align: center;
   font-family: "verdana";
+  text-align: center;
 }
 
 .preview {
-  align: center;
   background: white;
   font-family: Helvetica;
   font-size: 12px;
   font-weight: normal;
   margin: 0 auto 0 auto;
-
   min-height: 150px;
-  padding: 30;
+  padding: 30px;
   word-wrap: break-word;
 }
 
@@ -49,7 +48,7 @@ textarea {
   border-color: #E6B000;
   border-radius: 4px;
   border-style: solid;
-  border-width:1px;
+  border-width: 1px;
   display: block;
   font-family: "Helvetica-Light", "Helvetica", "Arial", Arial, sans-serif;
   font-size: 14px;
@@ -78,6 +77,10 @@ textarea {
   height: 100%;
   float: right;
   text-align: center;
+  margin-right: 10px;
+}
+.third:first-child {
+  margin-right: 0;
 }
 
 input {
@@ -89,4 +92,10 @@ input {
 }
 
 #weight {
+  width: 105px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
 }

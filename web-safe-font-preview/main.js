@@ -5,6 +5,7 @@ $(document).ready(() => {
 
   $('#font').on('change', (event) => {
     let fontFamily = $(event.currentTarget).val();
+    console.log(fontFamily);
     $('.preview').css('fontFamily', fontFamily);
   });
   
