@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Typo | Test-drive your text</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <link href="styles.css" rel="stylesheet">
@@ -15,11 +17,48 @@
     <form method="POST">
       <div class="third">
         Font Family <select name="font" id="font">
-          <option value="helvetica" id="helvetica">Helvetica</option>
-          <option value="times" id="times">Times</option>
-          <option value="impact" id="impact">Impact</option>
-          <option value="courier" id="courier">Courier</option>
-          <option value="verdana" id="verdana">Verdana</option>
+          <option selected disabled>Choose one</option>
+          <optgroup label="sans-serif">
+            <option value="Arial" id="arial">Arial</option>
+            <option value="Calibri" id="calibri">Calibri</option>
+            <option value="Candara" id="candara">Candara</option>
+            <option value="Century Gothic" id="century_gothic">Century Gothic</option>
+          </optgroup>
+          <optgroup label="serif">
+            <option value="Baskerville" id="baskerville">Baskerville</option>
+            <option value="Bodoni MT" id="bodoni_mt">Bodoni MT</option>
+            <option value="Calisto MT" id="calisto_mt">Calisto MT</option>
+            <option value="Cambria" id="cambria">Cambria</option>
+          </optgroup>
+          <optgroup label="monospace">
+            <option value="Consolas" id="consolas">Consolas</option>
+          </optgroup>
+          <optgroup label="fantasy">
+            <option value="Copperplate Gothic" id="copperplate_gothic">Copperplate Gothic</option>
+          </optgroup>
+          
+        
+          <option value="Courier New" id="courier_new">Courier New</option>
+          <option value="Dejavu Sans" id="dejavu_sans">Dejavu Sans</option>
+          <option value="Didot" id="didot">Didot</option>
+          <option value="Franklin Gothic" id="franklin_gothic">Franklin Gothic</option>
+          <option value="Garamond" id="garamond">Garamond</option>
+          <option value="Georgia, Times, Times New Roman, serif" id="georgia">Georgia</option>
+          <option value="Gill Sans" id="gill_sans">Gill Sans</option>
+          <option value="Goudy Old Style" id="goudy_old_style">Goudy Old Style</option>
+          <option value="Helvetica Neue" id="helvetica">Helvetica</option>
+          <option value="Impact" id="impact">Impact</option>
+          <option value="Lucida Bright" id="lucida_bright">Lucida Bright</option>
+          <option value="Lucida Sans" id="lucida_sans">Lucida Sans</option>
+          <option value="Times New Roman" id="times_new_roman">Times New Roman</option>
+          <option value="Optima" id="optima">Optima</option>
+          <option value="Palatino" id="palatino">Palatino</option>
+          <option value="Perpetua" id="perpetua">Perpetua</option>
+          <option value="Rockwell" id="rockwell">Rockwell</option>
+          <option value="Segoe UI" id="segoe_ui">Segoe UI</option>
+          <option value="Tahoma" id="tahoma">Tahoma</option>
+          <option value="Trebuchet MS" id="trebuchet_ms">Trebuchet MS</option>
+          <option value="Verdana" id="verdana">Verdana</option>
         </select>
       </div>
       <div class="third">
@@ -32,7 +71,7 @@
          <option value="normal">Normal</option>
          <option value="bold">Bold</option>
          <option value="bolder">Bolder</option>
-         <option value="lighter">lighter</option>
+         <option value="lighter">Lighter</option>
        </select>
       </div>
     </form>
