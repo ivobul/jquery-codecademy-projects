@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Typo | Test-drive your text</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <link href="styles.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
 </head>
 <body>
   <div class = "outer-container">
@@ -16,7 +15,8 @@
   <div class="formHolder">
     <form method="POST">
       <div class="third">
-        Font Family <select name="font" id="font">
+        <label for="font">Font Family</label><br>
+        <select name="font" id="font">
           <option selected disabled>Choose one</option>
           <optgroup label="Sans-serif">
             <option value="Arial" id="arial">Arial</option>
@@ -68,23 +68,25 @@
         </select>
       </div>
       <div class="third">
-        Font Size  
+        <label for="size">Font Size </label> 
         <br>
         <input type="text" placeholder="12" id="size">
       </div>
       <div class="third">
-        Font Weight  <select name="weight" id="weight">
-         <option value="normal">Normal</option>
-         <option value="bold">Bold</option>
-         <option value="bolder">Bolder</option>
-         <option value="lighter">Lighter</option>
-       </select>
+        <label for="weight">Font Weight</label><br>
+        <select name="weight" id="weight">
+          <option value="normal">Normal</option>
+          <option value="bold">Bold</option>
+          <option value="bolder">Bolder</option>
+          <option value="lighter">Lighter</option>
+        </select>
       </div>
     </form>
   </div>
   <div class="preview">Sample Font</div>
   <textarea name="text" placeholder="Type something here and see what happens..." id="text" cols="30" rows="10"></textarea>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="main.js"></script>
 </body>
-<script src="main.js"></script>
 </html>
