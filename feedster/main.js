@@ -29,4 +29,9 @@ $(document).ready(() => {
   });
   
   $('.postText').val('');
+  
+  $(".button-holder").click((event) => {
+  //Prevent the default action of the event: in this case, prevent form from submitting data 
+    event.preventDefault();
+  });
 }); 
