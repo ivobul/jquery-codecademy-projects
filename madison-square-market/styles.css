@@ -15,8 +15,8 @@ body {
 
 /* Header */
 .header {
-  padding: 45px 0;
   background-color: #0074ff;
+  padding: 45px 0;
 }
 
 .header ul {
@@ -34,19 +34,19 @@ body {
 }
 
 .header h1 {
-  margin: 0;
-  font-size: 20px;
   color: #fff;
+  font-size: 20px;
+  margin: 0;
   text-transform: capitalize;
 }
 
 .header h3 {
   color: #fff;
-  font-size: 14px;
-  display: inline-block;
-  margin: 0;
-  font-weight: normal;
   cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
 }
 
 .header .dropdown {
@@ -54,9 +54,9 @@ body {
 }
 
 .header .dropdown-menu {
+  border-radius: 0;
   position: absolute;
   top: 20px;
-  border-radius: 0;
 }
 
 .header .dropdown-menu li {
@@ -100,9 +100,9 @@ body {
 
 
 @media (max-width: 1024px) { 
-  .header h1 { 
+  .header h1 {  
+    text-align: center;
     width: 100%; 
-    text-align: center; 
   } 
 
   .pull-right { 
@@ -111,5 +111,3 @@ body {
     width: 225px;
   }
 }
-
-
