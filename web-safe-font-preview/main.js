@@ -18,4 +18,7 @@ $(document).ready(() => {
     let fontSize = $(event.currentTarget).val() + 'px';
     $('.preview').css('fontSize', fontSize);
   });
+  
+  // Clear the textarea
+  $('#text').val("");
 });
