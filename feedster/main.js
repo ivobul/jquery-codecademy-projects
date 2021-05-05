@@ -1,9 +1,10 @@
 $(document).ready(() => {
+
   $('.menu').on('mouseenter', () => {
-    $('.nav-menu').show();
+    $('.nav-menu').show(800);
   });
   $('.nav-menu').on('mouseleave', () => {
-    $('.nav-menu').hide();
+    $('.nav-menu').hide(500);
   });
 
   $('.btn').on('mouseenter', (event) => {
@@ -11,7 +12,8 @@ $(document).ready(() => {
   }).on('mouseleave', (event) => {
     $(event.currentTarget).removeClass('btn-hover');
   });
-
+  
+  
   $('.postText').focus();
   $('.postText').on('keyup', (event) => {
     let post = $(event.currentTarget).val();
@@ -25,4 +27,6 @@ $(document).ready(() => {
     
     $('.characters').html(remaining);
   });
+  
+  $('.postText').val('');
 }); 
